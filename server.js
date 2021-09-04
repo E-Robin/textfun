@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (req, res) {
-  res.sendFile("<h1>Hello</h1>");
+  res.send("<h1>Hello</h1>");
 });
 
 
