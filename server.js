@@ -28,11 +28,13 @@ app.get("/", function (req, res) {
 
 app.get("/api/:text" , function (req ,res)
 {
-  //const d = req.params.text ;
+  const d = req.params.text ;
 
+  var f=d.toUpperCase();
+       
 
  
-        res.json({name: "api" ,content : "Yoda"}) ;
+        res.json({name: "api" ,content : f }) ;
     
          
 
